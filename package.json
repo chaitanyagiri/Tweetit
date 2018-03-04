@@ -1,0 +1,50 @@
+{
+  "name": "tweetit",
+  "version": "0.2.1",
+  "description": "A tweaked version of a twitter bot inspired from https://github.com/spences10/twitter-bot-bootstrap.git",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "snyk test && node index.js",
+    "snyk-protect": "snyk protect contributor --yes",
+    "prepublish": "npm run snyk-protect",
+    "deploy": "now -E",
+    "format": "prettier es5 --no-semi --single-quote --write src/**/*.js",
+    "contrib": "contributor"
+  },
+  "pre-commit": [
+    "format"
+  ],
+  "devDependencies": {
+    "contributor": "0.1.25",
+    "prettier": "1.11.0"
+  },
+  "dependencies": {
+    "console.lol": "0.1.2",
+    "dotenv": "^5.0.1",
+    "request": "^2.83.0",
+    "snyk": "1.69.10",
+    "twit": "^2.2.9",
+    "unique-random-array": "^1.0.0",
+    "unirest": "^0.5.1"
+  },
+  "now": {
+    "alias": "twitter-bot-bootstrap"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spences10/twitter-bot-bootstrap.git"
+  },
+  "keywords": [
+    "twitter",
+    "bot",
+    "bootstrap"
+  ],
+  "author": "Chaitanya Giri (https://chaitanyagiri.github.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chaitanyagiri/tweetit/issues"
+  },
+  "homepage": "https://github.com/chaitanyagiri/tweetit",
+  "snyk": true
+}
