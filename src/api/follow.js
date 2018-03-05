@@ -28,6 +28,8 @@ const follow = () => {
 
         if (!isReply(data[rando])) {
             followUserId = data[rando].id_str
+        }else {
+          followUserId = data[rando].id_str;
         }
 
         bot.post(

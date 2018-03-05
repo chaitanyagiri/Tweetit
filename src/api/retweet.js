@@ -30,6 +30,8 @@ const retweet = () => {
 
         if (!isReply(data.statuses[rando])) {
           retweetId = data.statuses[rando].id_str
+        }else {
+          retweetId = data.statuses[rando].id_str;
         }
 
         bot.post(
