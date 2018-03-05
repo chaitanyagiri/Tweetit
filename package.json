@@ -2,6 +2,10 @@
   "name": "tweetit",
   "version": "0.2.1",
   "description": "A tweaked version of a twitter bot inspired from https://github.com/spences10/twitter-bot-bootstrap.git",
+  "engines": {
+    "npm": "5.6.0",
+    "node":"9.6.1"
+  }
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
