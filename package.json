@@ -10,8 +10,6 @@
   "scripts": {
     "start": "node index.js",
     "test": "snyk test && node index.js",
-    "snyk-protect": "snyk protect contributor --yes",
-    "prepublish": "npm run snyk-protect",
     "deploy": "now -E",
     "format": "prettier es5 --no-semi --single-quote --write src/**/*.js",
     "contrib": "contributor"
