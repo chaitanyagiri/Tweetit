@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 module.exports = {
   twitterKeys: {
     consumer_key: process.env.TWITTER_CONSUMER_KEY,
@@ -16,6 +18,7 @@ module.exports = {
     searchCount: process.env.TWITTER_SEARCH_COUNT,
     randomReply: process.env.RANDOM_REPLY,
     followString: process.env.FOLLOW_INTERESTS,
-    quoterate: process.env.TWITTER_QUOTE_RATE * 1000 * 60
+    quoterate: process.env.TWITTER_QUOTE_RATE * 1000 * 60,
+    newsKEY: process.env.NEWSANDMEDIA_KEY
   }
 }

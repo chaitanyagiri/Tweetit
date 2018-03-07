@@ -15,18 +15,22 @@ const reply = require('./api/reply')
 const favorite = require('./api/favorite')
 const follow = require('./api/follow')
 const quote = require('./api/quote')
+const newsnmedia =  require('./api/newsandmedia')
 
 console.rofl('Bot starting...')
 
 // retweet on keywords
-retweet()
+ retweet()
 setInterval(retweet, config.twitterConfig.retweet)
-favorite()
-setInterval(favorite, config.twitterConfig.like)
-follow()
-setInterval(follow, config.twitterConfig.followrate)
-quote()
-setInterval(quote, config.twitterConfig.quoterate)
+// favorite()
+// setInterval(favorite, config.twitterConfig.like)
+newsnmedia()
+setInterval(newsnmedia, config.twitterConfig.retweet)
+// follow()
+// setInterval(follow, config.twitterConfig.followrate)
+// quote()
+// setInterval(quote, config.twitterConfig.quoterate)
+
 
 // reply to new follower
 const userStream = bot.stream('user')
@@ -40,4 +44,4 @@ const server = createServer((req, res) => {
   res.end()
 })
 
-server.listen(process.env.PORT || 3000)
+server.listen(3000)

@@ -30,7 +30,7 @@ https.get(url, res => {
     bot.post(
                 'statuses/update',
                 {
-                  status: "QUOTE OF THE DAY \n"+b.quote.body+" -"+ b.quote.author
+                  status: "Once a wise person said \n"+b.quote.body+" -"+ b.quote.author
                 },
                 (err, response) => {
                   if (err) {

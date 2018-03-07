@@ -4,7 +4,7 @@
   "description": "A tweaked version of a twitter bot inspired from https://github.com/spences10/twitter-bot-bootstrap.git",
   "engines": {
     "npm": "5.6.0",
-    "node":"9.6.1"
+    "node": "9.6.1"
   },
   "main": "index.js",
   "scripts": {
@@ -25,6 +25,7 @@
     "console.lol": "0.1.2",
     "dotenv": "^5.0.1",
     "request": "^2.83.0",
+    "sentiment": "^4.2.0",
     "snyk": "1.69.10",
     "twit": "^2.2.9",
     "unique-random-array": "^1.0.0",
