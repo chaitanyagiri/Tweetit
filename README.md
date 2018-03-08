@@ -14,7 +14,6 @@ I saw many limitations to it so I added many features to it.
 
 Do mark a star if you liked the project. It really motivates me to do amazing things.
 
-There is one more major difference in it. I HATE CONSOLE.LOL(); So I have replaced it. XD 
 ## License
 
 MIT License
