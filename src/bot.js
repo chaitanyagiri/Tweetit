@@ -20,16 +20,16 @@ const newsnmedia =  require('./api/newsandmedia')
 console.rofl('Bot starting...')
 
 // retweet on keywords
- retweet()
+retweet()
 setInterval(retweet, config.twitterConfig.retweet)
-// favorite()
-// setInterval(favorite, config.twitterConfig.like)
+favorite()
+setInterval(favorite, config.twitterConfig.like)
 newsnmedia()
 setInterval(newsnmedia, config.twitterConfig.retweet)
-// follow()
-// setInterval(follow, config.twitterConfig.followrate)
-// quote()
-// setInterval(quote, config.twitterConfig.quoterate)
+follow()
+setInterval(follow, config.twitterConfig.followrate)
+quote()
+setInterval(quote, config.twitterConfig.quoterate)
 
 
 // reply to new follower
